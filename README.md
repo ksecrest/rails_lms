@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+user has_many courses
+courses has_many users
 
-Things you may want to cover:
+has many through
+user has_many courses, through enrollment
+courses has_many users, through enrollment
 
-* Ruby version
+has many one to many relationship
+ one video has many comments for example
+has one, one to one relationship
+one person has a single address
+has many through, many to many relationship
+billboard has many songs, through artists
+songs have many billboards, through artists
 
-* System dependencies
+user is a parent
+courses is a parent
+enrollment is a child of courses
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
